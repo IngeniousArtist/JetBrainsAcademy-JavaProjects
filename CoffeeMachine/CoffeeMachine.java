@@ -3,20 +3,13 @@ import java.util.*;
 
 public class CoffeeMachine {
     public static void main(String[] args){
-        int[] stonks = new int[5];
-        stonks[0] = 400;
-        stonks[1] = 540;
-        stonks[2] = 120;
-        stonks[3] = 9;
-        stonks[4] = 550;
-
+        int[] stonks = {400,540,120,9,550};
         machine(stonks);
     }
     
     static void machine(int[] stonks) {
         while(true){
             Scanner sc = new Scanner(System.in);
-            
             System.out.println("Write action (buy, fill, take, remaining, exit): ");
             String action = sc.nextLine();
             
